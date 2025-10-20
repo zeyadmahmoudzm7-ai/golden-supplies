@@ -1,0 +1,1036 @@
+/* Golden Supplies Trading - Responsive Styles */
+/* This file contains all responsive styles without modifying existing desktop styles */
+
+/* ========================================
+   GLOBAL RESPONSIVE FIXES
+   ======================================== */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    overflow-x: hidden;
+    max-width: 100vw;
+    width: 100%;
+}
+
+.container {
+    max-width: 100%;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+/* Ensure all sections fit within viewport */
+section {
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+/* Prevent any element from causing horizontal scroll */
+img, video, iframe {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Override visit-btn styling to be wider and black */
+.visit-btn {
+    display: inline-block !important;
+    padding: 18px 20px !important;
+    font-size: 0.85rem !important;
+    font-weight: 600 !important;
+    border-radius: 50px !important;
+    background: #000000 !important;
+    color: white !important;
+    border: 2px solid #333333 !important;
+    transition: all 0.3s ease !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5px !important;
+    width: 220px !important; /* Increased from 180px to prevent text wrapping */
+    height: 56px !important;
+    position: relative !important;
+    text-decoration: none !important;
+}
+
+.visit-btn:hover {
+    background: #333333 !important;
+    border-color: #555555 !important;
+    transform: translateY(-3px) !important;
+}
+
+.visit-btn span {
+    color: white !important;
+}
+
+/* ========================================
+   SMOOTH SCROLL BEHAVIOR
+   ======================================== */
+html {
+    scroll-behavior: smooth;
+}
+
+/* ========================================
+   BACK TO TOP BUTTON
+   ======================================== */
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, #DAA520 0%, #B8860B 100%);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 15px rgba(218, 165, 32, 0.4);
+    transition: all 0.3s ease;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+}
+
+.back-to-top.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.back-to-top:hover {
+    background: linear-gradient(135deg, #B8860B 0%, #DAA520 100%);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(218, 165, 32, 0.6);
+}
+
+/* ========================================
+   HAMBURGER MENU STYLES
+   ======================================== */
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 5px;
+    z-index: 1001;
+}
+
+.hamburger-line {
+    width: 25px;
+    height: 3px;
+    background: #DAA520;
+    margin: 3px 0;
+    transition: all 0.3s ease;
+    border-radius: 2px;
+}
+
+.hamburger-menu.active .hamburger-line:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 6px);
+}
+
+.hamburger-menu.active .hamburger-line:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-menu.active .hamburger-line:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* Mobile Menu Overlay */
+.mobile-menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.95);
+    backdrop-filter: blur(10px);
+    z-index: 999;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.mobile-menu-overlay.show {
+    display: flex;
+    opacity: 1;
+}
+
+.mobile-menu-content {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.mobile-menu-content a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 20px 0;
+    padding: 15px 30px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.mobile-menu-content a:hover {
+    background: rgba(218, 165, 32, 0.2);
+    color: #DAA520;
+    transform: translateY(-2px);
+}
+
+.mobile-menu-content a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: #DAA520;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.mobile-menu-content a:hover::after {
+    width: 80%;
+}
+
+/* ========================================
+   RESPONSIVE BREAKPOINTS
+   ======================================== */
+
+/* iPad Pro and Large Tablet Styles (1024px - 1366px) */
+@media (max-width: 1366px) and (min-width: 1024px) {
+    /* Ensure no horizontal scroll on iPad Pro */
+    html, body {
+        overflow-x: hidden;
+        max-width: 100vw;
+    }
+    
+    .container {
+        max-width: 100%;
+        padding: 0 20px;
+        overflow-x: hidden;
+    }
+    
+    /* Ensure all content fits within viewport */
+    .header-inner,
+    .video-overlay,
+    .stats-grid,
+    .brands-grid,
+    .visit-us-cards {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    
+    /* Header adjustments for iPad Pro */
+    .header-inner {
+        padding: 15px 20px;
+        max-width: 100%;
+    }
+    
+    /* Brands grid for iPad Pro - prevent overflow */
+    .brands-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        max-width: 100%;
+        overflow: hidden;
+    }
+    
+    .brand-card {
+        height: 170px;
+        padding: 12px 8px 15px 8px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        overflow: hidden;
+    }
+    
+    .brand-card img {
+        max-height: 70px; /* unified iPad Pro height */
+        max-width: 120px;
+        object-fit: contain;
+        flex-shrink: 0;
+        margin-bottom: 8px;
+    }
+    
+    /* Specific logo adjustments for iPad Pro */
+    /* Remove per-logo overrides to keep rows aligned */
+    
+    .brand-card h4 {
+        font-size: 0.85rem;
+        line-height: 1.2;
+        margin: 0;
+        flex-shrink: 0;
+    }
+    
+    .brand-card p {
+        font-size: 0.75rem;
+        line-height: 1.2;
+        margin: 3px 0 0 0;
+        flex-shrink: 0;
+    }
+    
+    /* Video section adjustments */
+    .video-overlay {
+        padding: 50px 30px;
+        max-width: 90%;
+    }
+    
+    .video-overlay h1 {
+        font-size: 3.2rem;
+    }
+    
+    .video-overlay p {
+        font-size: 1.2rem;
+    }
+    
+    /* Statistics grid */
+    .stats-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        max-width: 100%;
+    }
+    
+    /* Contact section */
+    .visit-us-cards {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        max-width: 100%;
+    }
+    
+    /* Products section */
+    .subcategories {
+        gap: 20px;
+        max-width: 100%;
+    }
+}
+
+/* Tablet Styles (768px - 1023px) */
+@media (max-width: 1023px) {
+    /* Ensure no horizontal scroll on tablet */
+    html, body {
+        overflow-x: hidden;
+        max-width: 100vw;
+    }
+    
+    /* Header adjustments for tablet */
+    .header-inner {
+        padding: 15px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    
+    /* Logo adjustments - larger size */
+    .brand {
+        order: 1;
+        flex-shrink: 0;
+    }
+    
+    .brand .logo {
+        height: 60px; /* Increased from 55px for better visibility */
+    }
+    
+    .brand-since {
+        font-size: 0.65rem; /* Further reduced for better balance */
+        margin-top: 2px;
+    }
+    
+    /* Hide desktop navigation, show hamburger */
+    .primary-nav {
+        display: none;
+    }
+    
+    /* Header right section for mobile controls */
+    .header-right {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        order: 2;
+    }
+    
+    .hamburger-menu {
+        display: flex;
+        order: 1;
+    }
+    
+    /* Language switcher adjustments */
+    .lang-switcher {
+        order: 2;
+    }
+    
+    .lang-switch-btn {
+        padding: 8px 12px;
+        font-size: 0.9rem;
+    }
+    
+    /* Container adjustments */
+    .container {
+        padding: 0 15px;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    
+    /* Ensure all sections fit within tablet viewport */
+    .video-section,
+    .home-section,
+    .products-section,
+    .brands-section,
+    .contact-section {
+        max-width: 100vw;
+        overflow-x: hidden;
+    }
+    
+    /* Video section adjustments */
+    .video-overlay h1 {
+        font-size: 3rem;
+    }
+    
+    .video-overlay p {
+        font-size: 1.2rem;
+    }
+    
+    .video-buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .video-btn {
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    /* Statistics grid */
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    
+    /* Products section */
+    .product-category {
+        margin-bottom: 60px;
+    }
+    
+    .category-title {
+        font-size: 2rem;
+    }
+    
+    /* Brands grid - completely rewritten to prevent overlap */
+    .brands-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        max-width: 100%;
+        overflow: hidden;
+    }
+    
+    .brand-card {
+        background: #f8f9fa;
+        border-radius: 15px;
+        border: 2px solid transparent;
+        height: 160px; /* Increased height to prevent overlap */
+        text-align: center;
+        padding: 15px 10px 20px 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        transition: all 0.3s ease;
+        overflow: hidden;
+    }
+    
+    .brand-card:hover {
+        transform: translateY(-5px);
+        border-color: #000000;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    }
+    
+    .brand-card img {
+        max-height: 50px;
+        max-width: 90px;
+        object-fit: contain;
+        flex-shrink: 0;
+        margin-bottom: 10px;
+    }
+    
+    /* Specific logo adjustments for tablet */
+    .brand-card img[alt="Inter Abrasive Turkish Coated Abrasives - Sanding Belts, Discs, Flap Wheels"] {
+        max-height: 65px; /* Increased from 60px */
+        max-width: 100px; /* Increased from 95px */
+    }
+    
+    .brand-card img[alt="Kleiberit German Adhesives - PUR Adhesives, Hotmelts, Wood Glues"] {
+        max-height: 70px; /* Increased from 60px */
+        max-width: 110px; /* Increased from 95px */
+    }
+    
+    .brand-card img[alt="Leuco German Industrial Cutting Tools - Saw Blades, Router Bits, Diamond Tools"] {
+        max-height: 55px;
+        max-width: 90px;
+    }
+    
+    .brand-card h4 {
+        font-size: 0.85rem;
+        font-weight: 600;
+        margin: 0;
+        color: #000000;
+        line-height: 1.2;
+        text-align: center;
+        flex-shrink: 0;
+    }
+    
+    .brand-card p {
+        font-size: 0.75rem;
+        color: #666666;
+        font-weight: 500;
+        margin: 5px 0 0 0;
+        text-align: center;
+        line-height: 1.2;
+        flex-shrink: 0;
+    }
+    
+    /* Contact section */
+    .contact-sections {
+        flex-direction: column;
+        gap: 40px;
+    }
+    
+    .visit-us-cards {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    /* Visit Us button styling for tablet - wider and black */
+    .visit-btn {
+        display: inline-block;
+        padding: 18px 20px;
+        font-size: 0.85rem;
+        font-weight: 600;
+        border-radius: 50px;
+        background: #000000;
+        color: white !important;
+        border: 2px solid #333333;
+        transition: all 0.3s ease;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        width: 220px; /* Increased from 180px to prevent text wrapping */
+        height: 56px;
+        position: relative;
+        text-decoration: none;
+    }
+    
+    .visit-btn:hover {
+        background: #333333;
+        border-color: #555555;
+        transform: translateY(-3px);
+    }
+    
+    .visit-btn span {
+        color: white !important;
+    }
+    
+    /* Footer adjustments */
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+}
+
+/* Mobile Styles (≤ 767px) */
+@media (max-width: 767px) {
+    /* Ensure no horizontal scroll on mobile */
+    html, body {
+        overflow-x: hidden;
+        max-width: 100vw;
+    }
+    
+    /* Header adjustments for mobile */
+    .header-inner {
+        padding: 12px 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    
+    /* Logo adjustments - larger size for mobile */
+    .brand {
+        order: 1;
+        flex-shrink: 0;
+    }
+    
+    .brand .logo {
+        height: 55px; /* Increased from 50px for better visibility */
+    }
+    
+    .brand-since {
+        font-size: 0.55rem; /* Further reduced for better balance */
+        margin-top: 1px;
+    }
+    
+    /* Header right section for mobile controls */
+    .header-right {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        order: 2;
+    }
+    
+    .hamburger-menu {
+        order: 1;
+    }
+    
+    /* Language switcher - short labels */
+    .lang-switcher {
+        order: 2;
+    }
+    
+    .lang-switch-btn {
+        padding: 6px 10px;
+        font-size: 0.8rem;
+        min-width: 50px;
+    }
+    
+    /* Container adjustments */
+    .container {
+        padding: 0 10px;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    
+    /* Ensure all sections fit within mobile viewport */
+    .video-section,
+    .home-section,
+    .products-section,
+    .brands-section,
+    .contact-section {
+        max-width: 100vw;
+        overflow-x: hidden;
+    }
+    
+    /* Video section mobile adjustments */
+    .video-overlay {
+        padding: 40px 20px;
+    }
+    
+    .video-overlay h1 {
+        font-size: 2.5rem;
+        margin-bottom: 15px;
+    }
+    
+    .video-overlay p {
+        font-size: 1.1rem;
+        margin-bottom: 30px;
+    }
+    
+    .video-buttons {
+        flex-direction: column;
+        gap: 12px;
+    }
+    
+    .video-btn {
+        width: 100%;
+        max-width: 280px;
+        padding: 12px 20px;
+        font-size: 1rem;
+    }
+    
+    /* Home content section */
+    .home-content {
+        padding: 60px 0;
+    }
+    
+    .home-content h2 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+    
+    .home-content p {
+        font-size: 1rem;
+        margin-bottom: 30px;
+    }
+    
+    /* Statistics grid mobile */
+    .stats-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .stat-card {
+        padding: 20px;
+    }
+    
+    .stat-number {
+        font-size: 2.5rem;
+    }
+    
+    .stat-label {
+        font-size: 1.1rem;
+    }
+    
+    .stat-description {
+        font-size: 0.9rem;
+    }
+    
+    /* Products section mobile */
+    .products-section {
+        padding: 60px 0;
+    }
+    
+    .product-category {
+        margin-bottom: 50px;
+    }
+    
+    .category-title {
+        font-size: 1.8rem;
+        margin-bottom: 15px;
+    }
+    
+    .category-description {
+        font-size: 1rem;
+        margin-bottom: 30px;
+    }
+    
+    .subcategories {
+        gap: 20px;
+    }
+    
+    .subcategory {
+        margin-bottom: 30px;
+    }
+    
+    .subcategory h4 {
+        font-size: 1.3rem;
+        margin-bottom: 15px;
+    }
+    
+    /* Product carousel mobile */
+    .product-carousel {
+        height: 200px;
+    }
+    
+    .product-image {
+        height: 200px;
+    }
+    
+    /* Brands section mobile - completely rewritten */
+    .brands-section {
+        padding: 60px 0;
+    }
+    
+    .brands-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        max-width: 100%;
+        overflow: hidden;
+    }
+    
+    .brand-card {
+        background: #f8f9fa;
+        border-radius: 15px;
+        border: 2px solid transparent;
+        height: 150px; /* Adequate height to prevent overlap */
+        text-align: center;
+        padding: 12px 8px 15px 8px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        transition: all 0.3s ease;
+        overflow: hidden;
+    }
+    
+    .brand-card:hover {
+        transform: translateY(-5px);
+        border-color: #000000;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    }
+    
+    .brand-card img {
+        max-height: 45px;
+        max-width: 80px;
+        object-fit: contain;
+        flex-shrink: 0;
+        margin-bottom: 8px;
+    }
+    
+    /* Specific logo adjustments for mobile */
+    .brand-card img[alt="Inter Abrasive Turkish Coated Abrasives - Sanding Belts, Discs, Flap Wheels"] {
+        max-height: 75px; /* Increased from 60px */
+        max-width: 110px; /* Increased from 90px */
+        margin-top: 10px; /* Move it down */
+    }
+    
+    .brand-card img[alt="Kleiberit German Adhesives - PUR Adhesives, Hotmelts, Wood Glues"] {
+        max-height: 65px; /* Increased from 55px */
+        max-width: 100px; /* Increased from 85px */
+    }
+    
+    .brand-card img[alt="Leuco German Industrial Cutting Tools - Saw Blades, Router Bits, Diamond Tools"] {
+        max-height: 50px;
+        max-width: 80px;
+    }
+    
+    .brand-card h4 {
+        font-size: 0.8rem;
+        font-weight: 600;
+        margin: 0;
+        color: #000000;
+        line-height: 1.2;
+        text-align: center;
+        flex-shrink: 0;
+    }
+    
+    .brand-card p {
+        font-size: 0.7rem;
+        color: #666666;
+        font-weight: 500;
+        margin: 3px 0 0 0;
+        text-align: center;
+        line-height: 1.2;
+        flex-shrink: 0;
+    }
+    
+    /* Contact section mobile */
+    .contact-section {
+        padding: 60px 0;
+    }
+    
+    .contact-content h2 {
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+    
+    .contact-sections {
+        gap: 30px;
+    }
+    
+    .contact-buttons-container {
+        margin-bottom: 30px;
+    }
+    
+    .contact-btn {
+        width: 100%;
+        max-width: 300px;
+        padding: 12px 20px;
+        font-size: 1rem;
+    }
+    
+    .visit-us-cards {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .visit-card {
+        padding: 20px;
+    }
+    
+    .visit-card h3 {
+        font-size: 1.3rem;
+        margin-bottom: 10px;
+    }
+    
+    .visit-card p {
+        font-size: 0.9rem;
+        margin-bottom: 15px;
+    }
+    
+    .visit-btn {
+        display: inline-block;
+        padding: 18px 20px; /* Match video-btn padding */
+        font-size: 0.85rem; /* Match video-btn font size */
+        font-weight: 600;
+        border-radius: 50px; /* Match video-btn border radius */
+        background: #000000; /* Black background */
+        color: white !important;
+        border: 2px solid #333333;
+        transition: all 0.3s ease;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        width: 220px; /* Increased from 180px to prevent text wrapping */
+        height: 56px; /* Match video-btn height */
+        position: relative;
+        text-decoration: none;
+    }
+    
+    .visit-btn:hover {
+        background: #333333;
+        border-color: #555555;
+        transform: translateY(-3px); /* Match video-btn hover transform */
+    }
+    
+    .visit-btn span {
+        color: white !important;
+    }
+    
+    /* Footer mobile */
+    .footer {
+        padding: 40px 0 20px;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        text-align: center;
+    }
+    
+    .footer-section h4 {
+        font-size: 1.2rem;
+        margin-bottom: 15px;
+    }
+    
+    .footer-section p,
+    .footer-section a {
+        font-size: 0.9rem;
+    }
+    
+    .footer-links {
+        gap: 8px;
+    }
+    
+    .footer-links a {
+        padding: 8px 0;
+    }
+    
+    .social-links {
+        justify-content: center;
+        gap: 15px;
+    }
+    
+    .social-icon {
+        width: 35px;
+        height: 35px;
+        font-size: 16px;
+    }
+    
+    .footer-bottom {
+        margin-top: 25px;
+        padding-top: 20px;
+        font-size: 0.8rem;
+    }
+    
+    /* Back to top button mobile positioning */
+    .back-to-top {
+        bottom: 20px;
+        right: 20px;
+        width: 45px;
+        height: 45px;
+        font-size: 18px;
+    }
+}
+
+/* ========================================
+   RTL (ARABIC) RESPONSIVE ADJUSTMENTS
+   ======================================== */
+[dir="rtl"] .back-to-top {
+    right: auto;
+    left: 30px;
+}
+
+[dir="rtl"] .mobile-menu-content a::after {
+    left: auto;
+    right: 50%;
+    transform: translateX(50%);
+}
+
+/* RTL Header Layout - Keep same layout: logo left, nav center, language right */
+[dir="rtl"] .header-inner {
+    flex-direction: row;
+}
+
+[dir="rtl"] .brand {
+    order: 1;
+}
+
+[dir="rtl"] .primary-nav {
+    order: 2;
+}
+
+[dir="rtl"] .header-right {
+    order: 3;
+}
+
+/* RTL Navigation - Keep navigation in center, but text alignment right */
+[dir="rtl"] .primary-nav {
+    text-align: right;
+}
+
+[dir="rtl"] .primary-nav a {
+    text-align: right;
+}
+
+@media (max-width: 767px) {
+    [dir="rtl"] .back-to-top {
+        left: 20px;
+        right: auto;
+    }
+}
+
+/* ========================================
+   ACCESSIBILITY IMPROVEMENTS
+   ======================================== */
+.hamburger-menu:focus,
+.back-to-top:focus,
+.lang-switch-btn:focus {
+    outline: 2px solid #DAA520;
+    outline-offset: 2px;
+}
+
+.mobile-menu-content a:focus {
+    outline: 2px solid #DAA520;
+    outline-offset: 2px;
+    background: rgba(218, 165, 32, 0.2);
+}
+
+/* ========================================
+   PERFORMANCE OPTIMIZATIONS
+   ======================================== */
+@media (prefers-reduced-motion: reduce) {
+    .back-to-top,
+    .hamburger-line,
+    .mobile-menu-overlay,
+    .mobile-menu-content a {
+        transition: none;
+    }
+    
+    html {
+        scroll-behavior: auto;
+    }
+}
+
+/* ========================================
+   PRINT STYLES
+   ======================================== */
+@media print {
+    .site-header,
+    .back-to-top,
+    .hamburger-menu,
+    .mobile-menu-overlay {
+        display: none !important;
+    }
+    
+    .video-section {
+        display: none;
+    }
+    
+    body {
+        font-size: 12pt;
+        line-height: 1.4;
+    }
+}
