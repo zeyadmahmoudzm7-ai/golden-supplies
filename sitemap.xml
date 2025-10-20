@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+    <!-- Main Page - English -->
+    <url>
+        <loc>https://golden-supplies.com/</loc>
+        <lastmod>2024-12-19T12:00:00+00:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://golden-supplies.com/?lang=ar"/>
+        <image:image>
+            <image:loc>https://golden-supplies.com/assets/img/uploads/logo.jpg</image:loc>
+            <image:caption>Golden Supplies Trading Logo - Premium Tools & Equipment</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://golden-supplies.com/assets/img/uploads/product_cuttingtools_sawblades.png</image:loc>
+            <image:caption>Professional Cutting Tools - Router Bits and Saw Blades</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://golden-supplies.com/assets/img/uploads/product_abrasives_discs1.jpg</image:loc>
+            <image:caption>High-Quality Abrasives - Sanding Discs and Belts</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://golden-supplies.com/assets/img/uploads/product_woodadhesive.png</image:loc>
+            <image:caption>Wood Adhesives and Glue Solutions</image:caption>
+        </image:image>
+    </url>
+
+    <!-- Main Page - Arabic -->
+    <url>
+        <loc>https://golden-supplies.com/?lang=ar</loc>
+        <lastmod>2024-12-19T12:00:00+00:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://golden-supplies.com/"/>
+        <image:image>
+            <image:loc>https://golden-supplies.com/assets/img/uploads/logo.jpg</image:loc>
+            <image:caption>شعار مؤسسة التوريدات الذهبية - أدوات ومنتجات عالية الجودة</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://golden-supplies.com/assets/img/uploads/product_cuttingtools_sawblades.png</image:loc>
+            <image:caption>أدوات القطع المهنية - بتات الراوتر وشفرات المنشار</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://golden-supplies.com/assets/img/uploads/product_abrasives_discs1.jpg</image:loc>
+            <image:caption>مواد الصنفرة عالية الجودة - أقراص الصنفرة والسيور</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://golden-supplies.com/assets/img/uploads/product_woodadhesive.png</image:loc>
+            <image:caption>حلول لاصقات وغراء الخشب</image:caption>
+        </image:image>
+    </url>
+
+    <!-- Product Categories -->
+    <url>
+        <loc>https://golden-supplies.com/#products</loc>
+        <lastmod>2024-12-19T12:00:00+00:00</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- Cutting Tools Section -->
+    <url>
+        <loc>https://golden-supplies.com/#cutting-tools</loc>
+        <lastmod>2024-12-19T12:00:00+00:00</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Abrasives Section -->
+    <url>
+        <loc>https://golden-supplies.com/#abrasives</loc>
+        <lastmod>2024-12-19T12:00:00+00:00</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Adhesives Section -->
+    <url>
+        <loc>https://golden-supplies.com/#adhesives</loc>
+        <lastmod>2024-12-19T12:00:00+00:00</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Brands Section -->
+    <url>
+        <loc>https://golden-supplies.com/#brands</loc>
+        <lastmod>2024-12-19T12:00:00+00:00</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Contact Section -->
+    <url>
+        <loc>https://golden-supplies.com/#contact</loc>
+        <lastmod>2024-12-19T12:00:00+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Mobile Version -->
+    <url>
+        <loc>https://golden-supplies.com/index-mobile.html</loc>
+        <lastmod>2024-12-19T12:00:00+00:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <!-- Arabic Product Categories -->
+    <url>
+        <loc>https://golden-supplies.com/?lang=ar#products</loc>
+        <lastmod>2024-12-19T12:00:00+00:00</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://golden-supplies.com/#products"/>
+    </url>
+
+    <!-- Arabic Cutting Tools Section -->
+    <url>
+        <loc>https://golden-supplies.com/?lang=ar#cutting-tools</loc>
+        <lastmod>2024-12-19T12:00:00+00:00</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://golden-supplies.com/#cutting-tools"/>
+    </url>
+
+    <!-- Arabic Abrasives Section -->
+    <url>
+        <loc>https://golden-supplies.com/?lang=ar#abrasives</loc>
+        <lastmod>2024-12-19T12:00:00+00:00</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://golden-supplies.com/#abrasives"/>
+    </url>
+
+    <!-- Arabic Adhesives Section -->
+    <url>
+        <loc>https://golden-supplies.com/?lang=ar#adhesives</loc>
+        <lastmod>2024-12-19T12:00:00+00:00</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://golden-supplies.com/#adhesives"/>
+    </url>
+
+    <!-- Arabic Brands Section -->
+    <url>
+        <loc>https://golden-supplies.com/?lang=ar#brands</loc>
+        <lastmod>2024-12-19T12:00:00+00:00</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://golden-supplies.com/#brands"/>
+    </url>
+
+    <!-- Arabic Contact Section -->
+    <url>
+        <loc>https://golden-supplies.com/?lang=ar#contact</loc>
+        <lastmod>2024-12-19T12:00:00+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://golden-supplies.com/#contact"/>
+    </url>
+
+    <!-- Articles Section -->
+    <url>
+        <loc>https://golden-supplies.com/#articles</loc>
+        <lastmod>2024-12-19T12:00:00+00:00</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Individual Articles (Example URLs) -->
+    <url>
+        <loc>https://golden-supplies.com/articles/best-cutting-tools-woodworking-saudi-arabia</loc>
+        <lastmod>2024-12-19T12:00:00+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://golden-supplies.com/articles/choosing-right-abrasives-different-materials</loc>
+        <lastmod>2024-12-18T12:00:00+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://golden-supplies.com/articles/wood-adhesives-vs-glue-which-choose</loc>
+        <lastmod>2024-12-17T12:00:00+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://golden-supplies.com/articles/pvc-legs-skirting-boards-installation-guide</loc>
+        <lastmod>2024-12-16T12:00:00+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://golden-supplies.com/articles/automotive-sanding-techniques-professional-results</loc>
+        <lastmod>2024-12-15T12:00:00+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://golden-supplies.com/articles/aluminum-cutting-tools-precision-metal-work</loc>
+        <lastmod>2024-12-14T12:00:00+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+</urlset>
